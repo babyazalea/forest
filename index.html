@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>HARMONY</title>
 </head>
 <body>
-    
+    <div id="intro">
+        <div class="typed-wrap">
+            <div id="typed-strings">
+            </div>
+            <span id="typed"></span>
+        </div>
+        <div class="door">
+            <a href="#" class="doorWrap">
+                <i class="fas fa-door-closed closed"></i>
+                <i class="fas fa-door-open open"></i>
+            </a>
+        </div>
+    </div><!--intro-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+            var typed = new Typed('#typed', {
+            strings: ["<h1>調和</h1> ^3000 <br><br><br><p>조은</p> ^3000 <br><br><br><p>꿈을 꾸었다 ^2000 <br><br>원시림을 덮은 구름 사이로 ^500 <br>햇살이 ^1000 예언처럼 쏟아지는 길을 ^200 <br>나는 아무 걱정 없이 걷고 있었다</p>"],
+            typeSpeed:200,
+            });
+    </script>
 </body>
 </html>
+        

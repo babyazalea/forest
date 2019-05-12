@@ -1,1 +1,67 @@
 @charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300,400');
+
+/* intro */
+
+
+#intro{
+    width:100%;
+    height:100vh;
+    position: relative;
+}
+
+.typed-cursor {
+    vertical-align: middle;
+}
+.typed-wrap{
+    position: absolute;
+    left:50%;
+    top:20%;
+    transform: translateX(-50%);
+    width:300px;
+}
+#typed{
+    font-family: Noto Serif KR;
+    
+}
+#typed h1{
+    width: auto;
+    display: inline;
+}
+#typed p:first-of-type{
+    font-size:13px;
+    width: auto;
+    display: inline;
+}
+#typed p:last-of-type{
+    line-height:1.5;
+    width: auto;
+    display: inline;
+}
+
+.door{
+    position: absolute;
+    bottom:20%;
+    left:49%;
+}
+.doorWrap{
+    display: block;
+    width:auto;
+    height:auto;
+    position: relative;
+}
+.doorWrap:hover .open{
+    opacity:1;
+}
+.doorWrap:hover .closed{
+    opacity:0;
+}
+.doorWrap>i{
+    position: absolute;
+    transition:all 1.5s;
+    font-size:30px;
+}
+.doorWrap .open{
+    opacity:0; 
+}
