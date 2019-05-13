@@ -43,14 +43,11 @@
 .door{
     position: absolute;
     bottom:20%;
-    left:50%;
-    
+    left:48.5%;
 }
 .doorWrap{
-    width:auto;
-    height:auto;
     position: relative;
-    cursor: pointer;
+    display: block;
 }
 .doorWrap:hover .open{
     opacity:1;
