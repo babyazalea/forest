@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Noto+Serif+KR:300');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Noto+Serif+KR:400,700');
 
 /* intro */
 
@@ -74,27 +74,14 @@
     position: relative;
 }   
 
-#background>div{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position:absolute;
-}
-
-/* .person{
-    width:100%;
-    height:100%;
-    background-image: url(./img/forest_person.png);
-    display: none;
-} */
-
-#background>div{
+#background .light{
     position: absolute;
     width: 100%;
     height:100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display:none;
 }
 
 .light1{
@@ -191,7 +178,7 @@ header{
     position: fixed;
     top:50px;
     right:80px;
-    z-index: 10000;
+    z-index: 2;
 }
 nav{}
 .menu{}
@@ -203,11 +190,201 @@ nav{}
     font-weight: bold;
     font-size:20px;
     /* color:#e1b12c; */
-    color:#f7f1e3;
+    /* color:#ecf0f1; */
+    color:#ffa801;
     cursor: pointer;
+    position: relative;
+    /* text-shadow: 1px 1px  #000; */
 }
 .menu li:first-child{
     width:37.5px;
     height:30px;
 }
 .menu li a{}
+.menu li .fa-check{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%) scale(0.5);
+    top:-15px;
+    font-size:16px;
+    color:#ff6b6b;
+    opacity:0;
+    transition:all 0.3s;
+}
+.menu li:hover .fa-check{
+    top:-7px;
+    transform: translateX(-50%) scale(1);
+    opacity:1;
+}
+
+/* submenu */
+
+.submenu{
+    position: absolute;
+    width:40%;
+    height:0%;
+    z-index:1;
+    right:0;
+    overflow: hidden;
+    /* display:none; */
+    transition:all 1s;
+}
+.submenu.on{
+    height:100%;
+}
+.submenu ul{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:rgba(245, 246, 250, 0.9);
+    padding-top:130px;
+    box-sizing: border-box;
+    border-top:30px solid #130f40;
+    overflow: hidden;
+}
+.submenu ul::before{
+    position: absolute;
+    right:0;
+    top:80px;
+    content:'';
+    display: block;
+    width:100%;
+    height:1px;
+    z-index: 3;
+    background:#fab1a0;
+}
+.submenu ul li{
+    width:100%;
+    padding-top:40px;
+    border-bottom:1px dashed #999;
+    position: relative;
+}
+.submenu ul li:first-child{
+    border:none;
+    padding-top:0;
+}
+.submenu ul li p{
+    position: absolute;
+    bottom:3px;
+    left:30px;
+    font-family: Noto Serif KR;
+}
+
+.notice{
+    display:none;
+}
+.notice.on{
+    display:block;
+}
+.credits{
+    display:none;
+}
+.credits.on{
+    display: block;
+}
+.credits a{
+    font-weight: bold;
+}
+.credits .gloria{
+    font-family: Gloria Hallelujah;
+}
+
+/* tooltip */
+
+.tooltip{
+    display: inline-block;
+    position: relative;
+    z-index:999;
+}
+
+.tooltip-item{
+    font-weight:bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tooltip-itme::after{
+    content:'';
+    position: absolute;
+    width:200px;
+    height:30px;
+    bottom:100%;
+    left:50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.tooltip:hover .tooltip-item::after{
+    pointer-events: auto;
+}
+
+.tooltip-content{
+    position: absolute;
+    z-index: 9999;
+    width:300px;
+    left:0;
+    margin:0 0 20px -275px;
+    bottom:100%;
+    text-align: justify;
+    font-size:13px;
+    line-height: 1.4;
+    box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
+    background:#F8EFBA;
+    opacity:0;
+    padding:10px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.credits .tooltip-content{
+    width:80px;
+    margin:0 0 20px -30px;
+    padding:10px 10px 10px 20px;
+}
+
+.tooltip-effect .tooltip-content{
+    transform-origin:50% 100%;
+    transform: scale3d(0.7,0.3,1) translateX(50%);
+    transition:opacity 0.2s, transform 0.2s;
+}
+
+.tooltip:hover .tooltip-content{
+    pointer-events: auto;
+    opacity: 1;
+    transform:translate3d(0,0,0) rotate3d(0,0,0,0) translateX(50%);
+}
+
+.tooltip-content::after{
+    content:'';
+    top:100%;
+    left:50%;
+    border:solid transparent;
+    height:0;
+    width:0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color:#F8EFBA;
+    border-width:10px;
+    margin-left:-10px;
+}
+
+.tooltip-image{
+    position: absolute;
+    display: block;
+    float:left;
+    width:50px;
+    top:0;  
+}
+.tooltip-text{
+    display:block;
+    padding:10px 10px 10px 60px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.cover{
+    position: static;
+    width:40px;
+}
