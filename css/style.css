@@ -228,7 +228,7 @@ nav{}
 
 .submenu{
     position: absolute;
-    width:40%;
+    width:545px;
     height:0%;
     z-index:1;
     right:0;
