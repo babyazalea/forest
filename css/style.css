@@ -295,7 +295,9 @@ nav{}
 .credits .gloria{
     font-family: Gloria Hallelujah;
 }
-
+.credits p,a,span{
+    user-select: text;
+}
 /* tooltip */
 
 .tooltip{
@@ -308,6 +310,9 @@ nav{}
     font-weight:bold;
     cursor: pointer;
     display: inline-block;
+}
+.notice .tooltip-item{
+    display: block;
 }
 
 .tooltip-itme::after{

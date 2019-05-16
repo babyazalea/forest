@@ -221,6 +221,9 @@
 .abooksWrap .abooksTxt span{
     font-weight: bold;
 }
+.abooksWrap .abooksTxt i{
+    margin-right:5px;
+}
 
 /* pionner */
 
