@@ -1,35 +1,136 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <title>THE HARMONY : INTRO</title>
-</head>
-<body>
-    <div id="intro">
-        <div class="typed-wrap">
-            <div id="typed-strings">
-            </div>
-            <span id="typed"></span>
-        </div>
-        <div class="door">
-            <a href="main.html" class="doorWrap">
-                <i class="fas fa-door-closed closed"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>THE HARMONY : FOREST</title>
+  </head>
+  <body>
+    <div id="background">
+      <header>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="index.html" class="doorWrap">
                 <i class="fas fa-door-open open"></i>
-            </a>
-        </div>
-    </div><!--intro-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script>
-            var typed = new Typed('#typed', {
-            strings: ["<h1>調和</h1> ^3000 <br><br><br><p>조은</p> ^3000 <br><br><br><p>꿈을 꾸었다 ^2000 <br><br>원시림을 덮은 구름 사이로 ^500 <br>햇살이 ^1000 예언처럼 쏟아지는 길을 ^200 <br>나는 아무 걱정 없이 걷고 있었다</p>"],
-            typeSpeed:200,
-            });
-    </script>
-</body>
+                <i class="fas fa-door-closed closed"></i>
+              </a>
+            </li>
+            <li id="notice"><i class="fas fa-check"></i>notice</li>
+            <li>
+              <i class="fas fa-check"></i><a href="portfolio.html">portfolio</a>
+            </li>
+            <li>
+              <i class="fas fa-check"></i
+              ><a href="https://github.com/babyazalea">github</a>
+            </li>
+            <li id="credits"><i class="fas fa-check"></i>credits</li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header -->
+      <div class="submenu">
+        <ul class="notice">
+          <li></li>
+          <li><p></p></li>
+          <li>
+            <p>
+              이 웹 사이트는
+              <span class="tooltip tooltip-effect">
+                <a
+                  href="https://dasibookshop.com/product/untitled-562"
+                  class="tooltip-item"
+                  >유태양</a
+                >
+                <span class="tooltip-content">
+                  <img
+                    src="./images/yty_face_color.png"
+                    class="tooltip-image face"
+                    alt="유태양 얼굴"
+                  />
+                  <span class="tooltip-text"
+                    >유태양, 만 28세. 풀스택 개발자가 목표인 주니어 프론트엔드
+                    개발자.</span
+                  >
+                </span> </span
+              >의 개인 웹 사이트로
+            </p>
+          </li>
+          <li><p>만들어졌습니다. 상단의 「portfolio」를 클릭하시면</p></li>
+          <li>
+            <p>공개된 모든 포트폴리오를 보실 수 있는 페이지로 이동합니다.</p>
+          </li>
+          <li>
+            <p>「github」를 클릭하시면 개발자의 깃헙 페이지로 이동합니다.</p>
+          </li>
+          <li><p>이 웹 사이트에 사용된 이미지의 출처는</p></li>
+          <li><p>「credits」에 밝혔습니다.</p></li>
+          <li><p></p></li>
+          <li><p>방문해주셔서 감사합니다.</p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+        </ul>
+        <ul class="credits">
+          <li></li>
+          <li><p></p></li>
+          <li>
+            <p>
+              메인 페이지의 배경은
+              <a href="https://unsplash.com/@alexcgorham">Alex Gorham</a>의
+              사진을 이용한 이미지입니다.
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://fonts.google.com/">구글 웹 폰트</a>에서
+              <span class="gloria">Gloria Hallelujah</span> , Noto Serif KR
+            </p>
+          </li>
+          <li><p>서체를 사용했습니다.</p></li>
+          <li>
+            <p>
+              문과 체크 아이콘은
+              <a href="https://fontawesome.com/">Font Awesome</a>을
+              이용했습니다.
+            </p>
+          </li>
+          <li><p></p></li>
+          <li><p>맥북 에어(2012~)와 함께.</p></li>
+          <li><p class="contact">contact : usun12@hotmail.com</p></li>
+          <li><p>&copy; babyazalea</p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+        </ul>
+      </div>
+      <!-- submenu -->
+      <div class="light light1"></div>
+      <div class="light light2"></div>
+      <div class="light light3"></div>
+      <div class="light light4"></div>
+      <div class="light light5"></div>
+      <div class="light light6"></div>
+      <div class="light light7"></div>
+      <div class="light light8"></div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-        
