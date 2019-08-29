@@ -34,9 +34,13 @@
 .readMeTxt .mainTxt {
   line-height: 4;
 }
+.readMeTxt .mainTxt .arrow {
+  margin-left: 10px;
+}
 .readMeTxt .mainTxt i {
   font-size: 30px;
   margin-left: 10px;
+  color: #009432;
 }
 .readMeTxt address {
   font-family: Gloria Hallelujah;
